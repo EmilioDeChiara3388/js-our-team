@@ -52,13 +52,13 @@ for (let i = 0; i < teamMembers.length; i++) {
   let { name, role, email, img } = teamMember;
   let markup = `
       <div class="col-4">
-        <div class="card bg-dark text-light">
+        <div class="card bg-black text-light">
           <div class="row">
-            <div class="col 3">
+            <div class="col 3 py-0">
               <img src="${img}" alt="" class="member-pic">
             </div>
-            <div class="col-8 p-0 align-center">
-              <h3 class="mb-1">${name}</h3>
+            <div class="col-8 p-0 align-middle">
+              <h3 class="mb-1 fs-4">${name}</h3>
               <p class="mb-1">${role}</p>
               <p class="text-primary mb-1">${email}</p>
             </div>
