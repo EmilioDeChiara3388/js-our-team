@@ -68,12 +68,3 @@ for (let i = 0; i < teamMembers.length; i++) {
      `
   rowEl.innerHTML += markup;
 }
-
-/* <div class="col-4">
-        <div class="card bg-black text-light">
-          <img src="${img}" alt="" class="member-pic p-0">
-          <h3>${name}</h3>
-          <p>${role}</p>
-          <p class="text-primary">${email}</p>
-          </div>
-      </div> */
