@@ -44,22 +44,36 @@ const teamMembers = [
   }
 ];
 
-let rowEl = document.querySelector(".row");
+let rowEl = document.querySelector(".members");
 
 for (let i = 0; i < teamMembers.length; i++) {
-    let teamMember = teamMembers[i];
-    console.log(teamMember);
-    let {name, role, email, img} = teamMember;
-    let markup = `
-    <div class="col-4">
-      <div class="card bg-dark text-light">
-        <img src="${img}" alt="" class="member-pic p-0">
-        <h3>${name}</h3>
-        <p>${role}</p>
-        <p class="text-primary">${email}</p>
+  let teamMember = teamMembers[i];
+  console.log(teamMember);
+  let { name, role, email, img } = teamMember;
+  let markup = `
+      <div class="col-4">
+        <div class="card bg-dark text-light">
+          <div class="row">
+            <div class="col 3">
+              <img src="${img}" alt="" class="member-pic">
+            </div>
+            <div class="col-8 p-0 align-center">
+              <h3 class="mb-1">${name}</h3>
+              <p class="mb-1">${role}</p>
+              <p class="text-primary mb-1">${email}</p>
+            </div>
+          </div>
         </div>
-    </div>
-    `
-    rowEl.innerHTML += markup;
-
+      </div>
+     `
+  rowEl.innerHTML += markup;
 }
+
+/* <div class="col-4">
+        <div class="card bg-black text-light">
+          <img src="${img}" alt="" class="member-pic p-0">
+          <h3>${name}</h3>
+          <p>${role}</p>
+          <p class="text-primary">${email}</p>
+          </div>
+      </div> */
